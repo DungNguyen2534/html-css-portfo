@@ -108,8 +108,10 @@ body {
 
 /* Hero */
 .hero {
+  position: relative;
   padding: 3.5rem 0;
   height: calc(100dvh - 82.5px);
+  background: url(./img/hero-bg.jpg) center / cover no-repeat;
 }
 
 .hero__content {
@@ -123,26 +125,30 @@ body {
 
 .hero__left > :first-child {
   margin-bottom: 1rem;
-  opacity: 0.9;
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.8);
+  color: var(--txt1);
   font-style: 1rem;
   font-weight: 600;
 }
 
 .hero__title {
-  margin-bottom: 1rem;
+  color: var(--txt1);
+  text-shadow: -6px 6px 0px rgba(0, 0, 0, 0.7);
   font-size: 3rem;
   font-weight: 700;
   line-height: 4rem;
+  margin-bottom: 1rem;
 }
 
 .hero__title span {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px var(--txt2);
+  -webkit-text-stroke: 3.5px var(--txt1);
 }
 
 .hero__desc {
+  color: var(--txt1);
   margin-bottom: 2rem;
-  opacity: 0.8;
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
 .hero__right {
@@ -165,7 +171,7 @@ body {
 
 /* Service */
 .service {
-  background: var(--txt1);
+  /* background: var(--txt1); */
   color: var(--txt2);
   padding: 7.5rem;
 }
@@ -202,6 +208,7 @@ body {
 }
 
 .service__item {
+  background: var(--txt1);
   border: 3px solid var(--bg2);
   border-radius: 20px;
   height: 25rem;
@@ -272,7 +279,7 @@ body {
 }
 
 .about__title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
@@ -300,6 +307,7 @@ body {
 
 .about__achie-item p {
   font-size: 2rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -409,11 +417,11 @@ body {
 
 .footer__social img {
   width: 30px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .footer__social:hover img {
-  transform: translateY(-2px);
+  transform: scale(1.15);
 }
 
 .footer__coppyright {
