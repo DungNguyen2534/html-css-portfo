@@ -85,6 +85,7 @@ body {
   position: relative;
   padding: 0 0.5rem 0.5rem;
   color: var(--txt1);
+  font-weight: 600;
 }
 
 .nav__link::after {
@@ -99,7 +100,7 @@ body {
 }
 
 .nav__link:hover::after {
-  width: 60%;
+  width: 75%;
 }
 
 .nav__btn:hover {
