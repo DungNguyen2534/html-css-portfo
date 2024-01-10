@@ -171,14 +171,13 @@ body {
 
 /* Service */
 .service {
-  /* background: var(--txt1); */
   color: var(--txt2);
   padding: 7.5rem;
 }
 
 .service__title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--txt2);
   position: relative;
 }
