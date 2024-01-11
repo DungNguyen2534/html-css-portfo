@@ -31,6 +31,7 @@ body {
 
 .container {
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -43,6 +44,10 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.25s ease;
+}
+
+.btn-mobile {
+  display: none;
 }
 
 .btn:hover {
@@ -111,7 +116,7 @@ body {
 .hero {
   position: relative;
   padding: 3.5rem 0;
-  height: calc(100dvh - 82.5px);
+  height: calc(100vh - 82.5px);
   background: url(./img/hero-bg.jpg) center / cover no-repeat;
 }
 
@@ -173,7 +178,7 @@ body {
 /* Service */
 .service {
   color: var(--txt2);
-  padding: 7.5rem;
+  padding: 7.5rem 0;
 }
 
 .service__title {
@@ -211,7 +216,7 @@ body {
   background: var(--txt1);
   border: 3px solid var(--bg2);
   border-radius: 20px;
-  height: 25rem;
+  height: 24rem;
   overflow: auto;
   overscroll-behavior: none;
   transition: all 0.3s ease;
@@ -238,10 +243,17 @@ body {
 }
 
 .service__desc {
+  position: relative;
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   font-size: 1.2rem;
   padding-top: 1rem;
+}
+
+.service__desc::before {
+  content: ">>";
+  position: absolute;
+  left: -40px;
 }
 
 /* About */
@@ -251,13 +263,13 @@ body {
 }
 
 .about__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .about__left {
-  width: 40%;
   color: var(--txt1);
-  margin-right: 4rem;
+  margin-right: 6rem;
 }
 
 .about__img {
@@ -270,7 +282,7 @@ body {
   text-align: center;
   font-style: italic;
   font-size: 1.6rem;
-  margin-top: 1rem;
+  margin-top: -1.5rem;
   opacity: 0.9;
 }
 
@@ -300,7 +312,6 @@ body {
 
 .about__achie {
   margin: 4.7rem 0 2rem;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

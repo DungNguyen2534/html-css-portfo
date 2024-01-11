@@ -1,0 +1,178 @@
+/* PC */
+@media (max-width: 1300px) {
+  .service__content {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .hero__title {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+  }
+
+  .hero__right::after {
+    content: "JS";
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    font-size: 10rem;
+    font-weight: 700;
+    color: var(--btn1);
+  }
+
+  .service__desc {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
+
+  .service__content {
+    gap: 1.5rem;
+  }
+
+  .btn-pc {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1159.98px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .service__item {
+    height: 22rem;
+  }
+
+  .service__desc {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .service__item-heading {
+    font-size: 0.9rem;
+  }
+
+  .about__name {
+    white-space: initial;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1080px) {
+  .hero__content {
+    display: initial;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  .hero__right {
+    display: none;
+  }
+
+  .service__content {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
+
+  .service__item {
+    border-radius: initial;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr 2.5fr;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .about__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__name {
+    font-size: 2.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .nav__links {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .service {
+    padding: 3.5rem 0;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about__left {
+    display: none;
+  }
+
+  .about__achie {
+    margin: 4.7rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .about__achie-item:nth-child(2),
+  .about__achie-item:last-child {
+    border-right: none;
+  }
+
+  .contact {
+    padding: 1.5rem 0;
+  }
+
+  .contact__content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .contact input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact textarea {
+    font-size: 1rem;
+  }
+}
