@@ -44,6 +44,7 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.25s ease;
+  user-select: none;
 }
 
 .btn-mobile {
