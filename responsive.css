@@ -175,4 +175,8 @@
   .contact textarea {
     font-size: 1rem;
   }
+
+  .footer__social img {
+    width: 38px;
+  }
 }
